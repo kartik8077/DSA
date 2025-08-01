@@ -18,3 +18,19 @@ int main(){
     for(int i=0;i<n;i++){
         hash[arr[i]]+=1;
     }
+
+
+    
+    // fetching
+    int que;
+    cout<<"enter the number of queries :";
+    cin>>que;
+    while (que--){
+        int num;
+        cout<<"enter the query: ";
+        cin>>num;
+        cout<<num<<" appears "<<hash[num]<<" times ."<<endl;
+    }
+    
+    return 0 ;
+}
