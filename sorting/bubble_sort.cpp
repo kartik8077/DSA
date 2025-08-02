@@ -16,16 +16,16 @@ void bubble_sort(int arr[], int n) {
     }
 }
 
-// int main() {
-//     int arr[6] = {23, 45, 65, 2, 6, 78};
-//     int n = 6;
+int main() {
+    int arr[6] = {23, 45, 65, 2, 6, 78};
+    int n = 6;
 
-//     bubble_sort(arr, n);
+    bubble_sort(arr, n);
 
-//     // Print sorted array
-//     for (int i = 0; i < n; i++) {
-//         cout << arr[i] << " ";
-//     }
+    // Print sorted array
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
 
-//     return 0;
-// }
+    return 0;
+}
