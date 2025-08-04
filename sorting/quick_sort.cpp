@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// quick sort
 void quicksort(int arr[],int n){
    
 }
