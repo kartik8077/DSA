@@ -90,21 +90,50 @@ using namespace std ;
 
 
 // ------better approach(first sort->)
-int main() {
-    int arr[6] = {23, 45, 2, 66, 43, 6}; // Input array
-    int n = 6;
-    int largest=arr[0]; 
+
+// int main() {
+//     int arr[6] = {23, 45, 2, 66, 43, 6}; // Input array
+//     int n = 6;
+//     int largest=arr[0]; 
+//     for(int i=0;i<n;i++){
+//         if(arr[i]>largest){
+//             largest=arr[i];
+//         }
+//     }
+//     int slargest=-1;
+//     for(int i=0;i<n;i++){
+//         if(arr[i]>slargest && arr[i]!=largest){
+//             slargest=arr[i];
+//         }
+//     }
+    
+//     cout<<"the second largest is "<<slargest;
+// }
+
+
+
+
+
+//---------------------optimal approach------------------
+int main(){
+    int arr[]={12,34,22,44,67,45};
+    int n=6;
+    cout<<"array is :";
     for(int i=0;i<n;i++){
-        if(arr[i]>largest){
-            largest=arr[i];
-        }
+        cout<<arr[i]<<" ";
     }
+    cout<<endl;
+    int largest=arr[0];
     int slargest=-1;
     for(int i=0;i<n;i++){
-        if(arr[i]>slargest && arr[i]!=largest){
+        if(arr[i]>largest){
+            slargest=largest;
+            largest=arr[i];
+        }
+        else if(arr[i]<largest && arr[i]>slargest){
             slargest=arr[i];
         }
     }
-    
-    cout<<"the second largest is "<<slargest;
-}
+    cout<<slargest;
+    return 0;
+} 
