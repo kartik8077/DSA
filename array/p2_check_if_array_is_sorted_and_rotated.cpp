@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int check(int arr[],int n){
+bool check(int arr[],int n){
     for(int i=1;i<n;i++){
-            if(arr[i]<arr[i+1]){
+            if(arr[i]>arr[i+1]){
                 return false;
             }
         }
@@ -11,8 +11,11 @@ int check(int arr[],int n){
 
 }
 int main(){
-    int arr[6]={1,2,2,5,3,4};
-    int n=6;
+    int arr[5]={0};
+    int n=5;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
     cout<<boolalpha<<check(arr,n);
     return 0;
 }
