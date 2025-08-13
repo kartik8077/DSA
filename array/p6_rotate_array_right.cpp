@@ -2,6 +2,7 @@
 using namespace std;
 
 void rotate(int arr[],int n,int q){
+    q=q%n;
     while (q--)
     {
         int temp=arr[n-1];
